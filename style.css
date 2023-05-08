@@ -1,0 +1,81 @@
+ul li{float: left;margin: 13px;list-style-type: none;}
+option{color: black;}
+#productdetail1{border-radius: 2px;
+                box-shadow: 0 0 20px}
+#productdetail2{border-radius: 2px;
+               box-shadow: 0 0 20px}
+#productdetail3{border-radius: 2px;
+               box-shadow: 0 0 20px}
+#productdetail4{border-radius: 2px;
+               box-shadow: 0 0 20px}
+.class{padding: 15px;background-color: lavender;
+}
+.rotate {
+    animation: rotation 40s;
+  }
+  
+  .linear {
+    animation-timing-function: linear;
+  }
+  
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.team{width: 100%;border-radius: 200px;}
+a{color: white;text-decoration: none !important;}
+ul li a{text-decoration: none !important;}
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-start,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  /* display 4 */
+  @media (min-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start)
+  {
+      transform: translateX(25%) !important;
+    }
+  
+  .carousel-inner .carousel-item-left.active, .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start, .carousel-item-prev:not(.carousel-item-end)
+  {
+      transform: translateX(-25%) !important;
+  }
+  
+  .carousel-item-next.carousel-item-start {
+    transform: translateX(0) !important;
+  }
+  
+  .carousel-inner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end)
+  {
+      transform: translateX(-25%) !important;
+    }
+  }
+  
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left {
+    transform: translateX(0) !important;
+  }
